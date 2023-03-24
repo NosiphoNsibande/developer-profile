@@ -1,0 +1,31 @@
+.home {
+  &--navbar {
+    background-color: #AA336A;
+
+    .navbar-brand {
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    #navbarNavAltMarkup {
+      justify-content: right;
+      justify-items: right;
+
+      .nav-link {
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        text-transform: uppercase;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

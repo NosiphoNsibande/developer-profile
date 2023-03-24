@@ -1,0 +1,46 @@
+/* --------Project Created by NOSIPHO NSIBANDE -------------- */
+/*!
+ * Software Developer Profile
+ * Author:  Nosipho Nsibande
+ * Mail:    nosiphonsibande54@gmail.com
+ */
+$primary-color: #AA336A !important;
+$secondary-color: #001440;
+
+a {
+  text-decoration: none!important;
+}
+
+h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.w-hr {
+  color: $primary-color;
+  opacity: 1;
+  border-top: 10px solid $primary-color;
+}
+
+.w-btn {
+  font-weight: 600 !important;
+  padding: 10px 5px !important;
+}
+
+.w-btn-primary {
+  color: #fff !important;
+  background-color: $primary-color;
+}
+
+.w-btn-secondary {
+  border: 2px solid #AA336A !important;
+  background-color: #fff !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
