@@ -1,5 +1,11 @@
 .home {
   &--navbar {
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 9999;
+    top: 0;
+    left: 0;
     background-color: #AA336A;
 
     .navbar-brand {
