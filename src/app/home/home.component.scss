@@ -16,7 +16,6 @@
 
   .hero {
     &__profile-img {
-
       img {
         max-width: 200px;
         border-radius: 100%;
@@ -30,6 +29,7 @@
       }
 
       span {
+        animation: 3s anim-lineUp ease-out;
         font-size: 20px;
       }
 
@@ -42,7 +42,7 @@
     &__btn-wrapper {
       margin: 1rem 0;
 
-      button {
+      button, a {
         font-size: 18px;
         width: 200px;
         margin: 0 10px;
@@ -50,6 +50,10 @@
 
         i {
           margin-right: 5px;
+        }
+
+        &:hover {
+          opacity: 0.5;
         }
       }
     }
@@ -70,6 +74,7 @@
         background: #fff;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 5px;
+        animation: 5s anim-lineUp ease-out;
 
         &:hover {
           opacity: 0.5;
@@ -94,6 +99,11 @@
 
     .progress-bar {
       background-color: #055160;
+
+      /* "to left" / "to right" - affects initial color */
+      background: linear-gradient(to left, #055160 50%, #057288 50%) right;
+      background-size: 200%;
+      transition: 2s ease-out;
     }
 
     .w-hr {
@@ -101,6 +111,9 @@
     }
   }
 
+  &__summary {
+    animation: 8s anim-lineUp ease-out;
+  }
 
   &__skills-left {
     span {
@@ -123,4 +136,47 @@
   .w-hr {
     width: 410px;
   }
+
+  &:hover {
+    div.progress-bar {
+      background-position: left;
+    }
+  }
 }
+
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  0% {
+    transform: scale(1, 1);
+  }
+}
+

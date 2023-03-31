@@ -44,3 +44,20 @@ h1 {
 .text-right {
   text-align: right;
 }
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.techStack {
+  #aurelia, #javascript , #angular {
+    animation: rotation 20s infinite linear;
+  }
+}
