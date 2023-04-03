@@ -1,6 +1,6 @@
 .home {
   &--header {
-    background: linear-gradient(0deg, #000000, rgb(3 14 16 / 57%)), url(/assets/hero.jpg);
+    background: linear-gradient(0deg, #000000, rgb(3 14 16 / 57%)), url("^assets/hero.jpg");
     // NOTE: RESIZE
     height: auto;
     padding: 5rem 0;
