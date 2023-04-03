@@ -1,7 +1,7 @@
 .contact {
   &--header {
-    background: linear-gradient(0deg, #000000, rgb(3 14 16 / 57%)), url(/assets/contact-banner.jpg);
-    // NOTE: RESIZE
+    background: linear-gradient(0deg, #000000, rgb(3 14 16 / 57%)), url("^assets/contact-banner.jpg");
+    // NOTE: RESIZE"
     height: auto;
     padding: 4rem 0;
     background-position: center;
