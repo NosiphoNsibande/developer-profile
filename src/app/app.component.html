@@ -1,22 +1,20 @@
 <section class="home home--navbar">
   <!-- icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <div class="col-6">
-        <a class="navbar-brand" href="#">Software Developer</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+    <div class="container container--nav">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <a class="navbar-brand" href="#">Software Developer</a>
+        </div>
 
-      <div class="col-6">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav  text-right d-flex">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a routerLink="/experience" ariaCurrentWhenActive="page" class="nav-link" href="#">Experience</a>
-            <a class="nav-link" routerLink="/portfolio" ariaCurrentWhenActive="page" href="#">Portfolio</a>
-            <a class="nav-link" routerLink="/contact" href="#">Contact</a>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a routerLink="/experience" ariaCurrentWhenActive="page" class="nav-link" href="#">Experience</a>
+              <a class="nav-link" routerLink="/portfolio" ariaCurrentWhenActive="page" href="#">Portfolio</a>
+              <a class="nav-link" routerLink="/contact" href="#">Contact</a>
+            </div>
           </div>
         </div>
       </div>
@@ -24,6 +22,6 @@
   </nav>
 </section>
 
-<main>
+<main class="content-wrapper">
   <router-outlet> </router-outlet>
 </main>

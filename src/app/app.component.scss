@@ -1,3 +1,5 @@
+@import '../mixins';
+
 .home {
   &--navbar {
     position: fixed;
@@ -7,6 +9,15 @@
     top: 0;
     left: 0;
     background-color: #AA336A;
+
+    .container--nav {
+      display: block !important;
+    }
+
+    .navbar {
+      display: block;
+      width: 100%;
+    }
 
     .navbar-brand {
       color: #fff;
@@ -21,6 +32,17 @@
     #navbarNavAltMarkup {
       justify-content: right;
       justify-items: right;
+      display: flex;
+
+      .navbar-nav {
+        @include for-ipad() {
+          display: block;
+        }
+      }
+
+      @include for-ipad() {
+        display: block;
+      }
 
       .nav-link {
         color: #fff;
@@ -28,10 +50,20 @@
         font-size: 15px;
         text-transform: uppercase;
 
+        @include for-ipad() {
+          display: inline;
+          font-size: 13px;
+          padding: 0 10px 0px 0px;
+        }
+
         &:hover {
           opacity: 0.5;
         }
       }
+    }
+
+    @include for-ipad() {
+      text-align: center;
     }
   }
 }

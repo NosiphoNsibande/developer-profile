@@ -8,7 +8,7 @@ $primary-color: #AA336A !important;
 $secondary-color: #001440;
 
 a {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 h1 {
@@ -50,6 +50,7 @@ h1 {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -57,7 +58,15 @@ h1 {
 
 
 .techStack {
-  #aurelia, #javascript , #angular {
+
+  #aurelia,
+  #javascript,
+  #angular {
     animation: rotation 20s infinite linear;
   }
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
 }

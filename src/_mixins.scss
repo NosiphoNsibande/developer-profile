@@ -1,0 +1,19 @@
+/* ****** breakingpoints *************** */
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin xsm {
+  @media (max-width: 280px) {
+    @content;
+  }
+}
+
+@mixin for-ipad {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
