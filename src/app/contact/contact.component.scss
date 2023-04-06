@@ -1,3 +1,4 @@
+@import 'src/_mixins';
 .contact {
   &--header {
     background: linear-gradient(0deg, #000000, rgb(3 14 16 / 57%)), url("^assets/contact-banner.jpg");
@@ -16,7 +17,7 @@
 
   .hero {
     &__profile-img {
-
+      margin-top: 2rem;
       img {
         max-width: 200px;
         border-radius: 100%;
@@ -68,17 +69,33 @@
     .progress {
       height: 10px;
       margin: 5px 3rem 5px 0rem;
+
+      @include for-phone-only() {
+        margin: 5px 0rem 5px 0rem;
+      }
     }
 
     .progress-bar {
       background-color: #055160;
+
+      /* "to left" / "to right" - affects initial color */
+      background: linear-gradient(to left, #055160 50%, #057288 50%) right;
+      background-size: 200%;
+      transition: 2s ease-out;
     }
 
     .w-hr {
       width: 210px;
+      @include for-phone-only() {
+        width: 100%;
+      }
+    }
+
+    @include for-phone-only() {
+      margin: 1rem 0;
+      padding: 1rem 0;
     }
   }
-
 
   &__skills-left {
     span {
@@ -92,6 +109,14 @@
       font-size: 18px;
     }
   }
+
+  .map-wrap {
+
+    @include for-phone-only {
+      display: none;
+    }
+  }
+
 }
 
 .skills {
@@ -100,6 +125,16 @@
 
   .w-hr {
     width: 410px;
+
+    @include for-phone-only() {
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    div.progress-bar {
+      background-position: left;
+    }
   }
 }
 
