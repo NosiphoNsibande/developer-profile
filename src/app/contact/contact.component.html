@@ -55,9 +55,10 @@
         </div>
         <div class="map-wrap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13248.490523049826!2d18.481016200501983!3d-33.886495437023775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5c1f38ed3feb%3A0x9cc08e4ff4849d0d!2sTijgerhof%2C%20Cape%20Town%2C%207441!5e0!3m2!1sen!2sza!4v1680262373760!5m2!1sen!2sza"
-          width="100%" height="400"
+          width="100%" height="350"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
       </div>
       <div class="col-sm-12 col-md-12 col-lg-3">
         <div class="hobbies-wrapper">
@@ -163,80 +164,18 @@
     <div class="row main-content__skillsrow-wrapper">
       <div class="main-content__header">
         <h1>
-          Professional Skills
+          Reading...
         </h1>
         <hr class="w-hr">
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-6 main-content__skills-left">
-        <div class="main-content__skills-left--wrapper">
-          <span>JavaScript</span>
-          <div class="progress">
-            <div class="progress-bar " role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
+      <!-- <div  class="col-sm-6 col-md-6 col-lg-12 main-content__skills-left">
+        <img *ngFor="let item of books" src="{{item.thumbImage}}"  alt="{{item.title}}"/>
+        <div class="main-content__bookwrap mt-3">
 
-        <div class="main-content__skills-left--wrapper">
-          <span>Aurelia</span>
-          <div class="progress">
-            <div class="progress-bar " role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
+       </div>
+      </div> -->
 
-
-        <div class="main-content__skills-left--wrapper">
-          <span>Angular & AngularJS</span>
-          <div class="progress">
-            <div class="progress-bar " role="progressbar" style="width: 83%" aria-valuenow="75" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-
-
-        <div class="main-content__skills-left--wrapper">
-          <span>JQuery</span>
-          <div class="progress">
-            <div class="progress-bar " role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-sm-12 col-md-12 col-lg-6   main-content__skills-right">
-        <div class="main-content__skills-left--wrapper">
-          <span>HTML</span>
-          <div class="progress">
-            <div class="progress-bar " role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="main-content__skills-left--wrapper">
-          <span>SCSS & CSS</span>
-          <div class="progress">
-            <div class="progress-bar  " role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="main-content__skills-left--wrapper">
-          <span>WordPress & PHP</span>
-          <div class="progress">
-            <div class="progress-bar " role="progressbar" style="width: 96%" aria-valuenow="75" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="main-content__skills-left--wrapper">
-          <span>Agile methodology </span>
-          <div class="progress">
-            <div class="progress-bar  " role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
+      <ng-image-slider [images]="books" #nav></ng-image-slider>
     </div>
   </div>
 </section>

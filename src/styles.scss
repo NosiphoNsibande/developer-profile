@@ -70,3 +70,10 @@ h1 {
   position: relative;
   width: 100%;
 }
+
+.custom-image-main {
+
+  img {
+    object-fit: contain;
+  }
+}

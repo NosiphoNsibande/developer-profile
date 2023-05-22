@@ -61,28 +61,11 @@
 
 // NOTE: IMPROVE
 .main-content {
+
   &__skillsrow-wrapper {
     padding: 2rem;
     background: #ffffffa1;
     margin: 2rem;
-
-    .progress {
-      height: 10px;
-      margin: 5px 3rem 5px 0rem;
-
-      @include for-phone-only() {
-        margin: 5px 0rem 5px 0rem;
-      }
-    }
-
-    .progress-bar {
-      background-color: #055160;
-
-      /* "to left" / "to right" - affects initial color */
-      background: linear-gradient(to left, #055160 50%, #057288 50%) right;
-      background-size: 200%;
-      transition: 2s ease-out;
-    }
 
     .w-hr {
       width: 210px;
@@ -97,26 +80,22 @@
     }
   }
 
-  &__skills-left {
-    span {
-      font-size: 18px;
-      font-weight: 600;
-    }
-  }
-
-  &__skills-right {
-    span {
-      font-size: 18px;
-    }
-  }
-
   .map-wrap {
-
     @include for-phone-only {
       display: none;
     }
   }
 
+  .custom-image-main {
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+.ng-image-slider-container .main .main-inner .img-div img {
+  object-fit: contain;
 }
 
 .skills {
@@ -131,11 +110,7 @@
     }
   }
 
-  &:hover {
-    div.progress-bar {
-      background-position: left;
-    }
-  }
+
 }
 
 .hobbies-wrapper {
